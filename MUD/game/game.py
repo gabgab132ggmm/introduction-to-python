@@ -58,9 +58,9 @@ class GameState():
         )
 
 
-        def character_list(self):
-            print(f'{"Name":<15} {"Race":<12} {"Class":<10} {"Level":>2}')
-            print("_" * 45, end="\n\n")
+    def character_list(self):
+        print(f'{"Name":<15} {"Race":<12} {"Class":<10} {"Level":>2}')
+        print("_" * 45, end="\n\n")
 
-            for _, char in self.characters.items():
-                print(f"{char.name:<15} {char.race:<12} {char.cclass:<10} {char.level:>5}")
+        for _, char in self.characters.items():
+            print(f"{char.name:<15} {char.race:<12} {char.cclass:<10} {char.level:>5}")
