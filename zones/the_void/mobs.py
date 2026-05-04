@@ -41,8 +41,22 @@ TEMPLATES: dict[str, dict] = {
         "aggro":    False,
         "wander":   True,
     },
-      
-        "weasel": {
+    "Shrimpman": {
+        "name":             "Shrimpman",
+        "key_words":        ("shrimp"),
+        "room_description": "&wA Shrimpman is backflipping.&N",
+        "description": (
+            "very pink.\n"
+            "Shrimp."
+        ),
+        "race":     "humanoid",
+        "class":    "monk",
+        "level":    1,
+        "stats":    [60, 65, 60, 80, 70, 75],
+        "aggro":    False,
+        "wander":   True,
+    },
+    "weasel": {
         "name":             "weasel",
         "key_words":        ("weasel"),
         "room_description": "&wA Weasel floats here randomly.&N",
