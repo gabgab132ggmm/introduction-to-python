@@ -27,6 +27,21 @@ TEMPLATES: dict[str, dict] = {
         "aggro": False,
         "wander": True,
     },
+    "Chuck_Noris": {
+        "name": "Chuck Noris",
+        "key_words": ("chuck", "awsome"),
+        "room_description": "&Y The amazing Chuck Noris sits peacefully.&N",
+        "description": (
+            "Chuck Noris, a marshal arts master.\n"
+            "literally unbeatable."
+        ),
+        "race": "Human",
+        "class": "sensei",
+        "level": 1000,
+        "stats": [600, 650, 600, 800, 700, 900],
+        "aggro": False,
+        "wander": True,
+    },
     "void_dragon": {
         "name": "Inanis the Void Dragon",
         "key_words": ("inanis"),
