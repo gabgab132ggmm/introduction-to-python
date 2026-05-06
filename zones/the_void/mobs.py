@@ -71,7 +71,7 @@ TEMPLATES: dict[str, dict] = {
     "Red kobold": {
         "name": "Jremblen",
         "key_words": ("kobold"),
-        "room_description": "a red kobold that is looking through a bag stands here.&N",
+        "room_description": "a &rkobold&N is looking through a bag stands here.&N",
         "description": (
             "A kobold stands here looking through his bag, it it filled with several different types of moss.\n"
             "His scales are garnet red."
@@ -196,31 +196,22 @@ TEMPLATES: dict[str, dict] = {
         "aggro": True,
         "wander": True,
     },
-
+    "Sand Puma": {
+        "name":             "Sand Puma",
+        "key_words":        ("puma"),
+        "room_description": "&wA sand puma aimlesly being taken into the quick sand.&N",
+        "description": (
+            "rockyish sand color and yellow.\n"
+            "puma +."
+        ),
+        "race":     "pumaish",
+        "class":    "sandy",
+        "level":    1,
+        "stats":    [99, 68, 71, 87, 81, 100],
+        "aggro":    False,
+        "wander":   True,
+    },
 }
 
 # Module-level spawn — rooms.py calls  M.spawn("void_guardian")
 spawn = make_spawner(TEMPLATES, lambda: Mob)
-
-
-
-
-
-"void_guardian": {
-    "name":             "the Void Guardian",
-    "key_words":        ("guardian", "void"),
-    "room_description": (
-            "&XThe &+WVoid Guardian&N&X stands watch, unblinking.&N"
-        ),
-        "description": (
-            "&XA towering figure of condensed darkness.\n"
-            "Its eyes are two cold points of &+Wwhite light&N&X.&N"
-        ),
-        "race":     "Unknown",
-        "class":    "Guardian",
-        "level":    50,
-        "stats":    [120, 100, 130, 90, 110, 50],
-        "aggro":    False,
-        "wander":   False,
-        "position": "standing",
-    },
