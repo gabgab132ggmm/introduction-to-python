@@ -61,7 +61,6 @@ TEMPLATES: dict[str, dict] = {
 
 }
 
-}
 
 # Module-level spawn — rooms.py calls  M.spawn("void_guardian")
 spawn = make_spawner(TEMPLATES, lambda: Mob)
