@@ -27,8 +27,6 @@ TEMPLATES: dict[str, dict] = {
         "aggro": False,
         "wander": True,
     }
-}
-
     "wandering_teacher": {
         "name": "a wandering teacher",
         "key_words": ("student", "wandering"),
@@ -39,12 +37,10 @@ TEMPLATES: dict[str, dict] = {
         "race": "Human",
         "class": "Student",
         "level": 1,
-        "stats": [60, 65, 60, 80, 70, 75],
+        "stats": [80, 80, 80, 80, 80, 80],
         "aggro": False,
         "wander": True,
     }
-}
-
 "wandering_student": {
         "name": "a wandering student",
         "key_words": ("student", "wandering"),
@@ -60,8 +56,6 @@ TEMPLATES: dict[str, dict] = {
         "aggro": False,
         "wander": True,
     }
-}
-
 "wandering_student": {
         "name": "a wandering student",
         "key_words": ("student", "wandering"),
